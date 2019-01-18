@@ -1,8 +1,10 @@
 #OOPTic-Tac-Toe.py
+#Harrison Payne
+#Jan 2018
 #Allows the user to simulate games, agansist a computer or human opponent. Or even two comuters battling!
 #Based off of Michael Dawson's example program- Tic-Tac-Toe_basic.py
 #The third in a series of Tic-Tac-Toe games.
-#Changes made in this edition form the exterior POV:
+#Changes made in this edition from the exterior POV:
 #human v. human and computer v. computer games are now possible.
 #Changes from the interior POV:
 #Player class genralized to represent any kind of player
