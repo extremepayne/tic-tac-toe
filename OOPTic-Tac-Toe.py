@@ -198,13 +198,19 @@ self.player_piece = """
 
 
 #Update to print more detailed info concerning difficulty level.
-def display_instruct(player1_identity, player2_identity):
+def display_instruct(player1_identity, player2_identity, player1_difficulty, player2_difficulty):
 	"""Display game instructions."""
 	print("\n\nWelcome to Tic-Tac-Toe")
 	time.sleep(1.5)
-	print("As player1,", player1_identity)
+	if player1_identity == "computer":
+		print("As player1,", player1_difficulty.lower(), player1_identity)
+	else:
+	    print("As player1,", player1_identity)
 	time.sleep(1.7)
-	print("As player2,", player2_identity)
+	if player2_identity == "computer":
+		print("As player2,", player2_difficulty.lower(), player2_identity)
+	else:
+		print("As player2,", player2_identity)
 	time.sleep(1.7)
 	print("The board is set up like this:")
 	time.sleep(1.7)
@@ -390,7 +396,7 @@ def main():
 		else:
 			player2_difficulty = None
 		#Show them how it's done
-		display_instruct(player1_identity, player2_identity)
+		display_instruct(player1_identity, player2_identity, player1_difficulty, player2_difficulty)
 		#initialize peices
 		player1_piece = "X"
 		player2_piece = "O"
